@@ -13,9 +13,11 @@ const CHAT_VARIABLE = process.env.CHAT_VARIABLE || '';
 const PUBLIC_PATH = process.env.PUBLIC_PATH || '';
 
 const isProdEnv = process.env.NODE_ENV === 'production';
-const publicPath = (isProdEnv && CHAT_VARIABLE)
-  ? PUBLIC_PATH + '/' + CHAT_VARIABLE
-  : PUBLIC_PATH + '/';
+// const publicPath = (isProdEnv && CHAT_VARIABLE)
+//   ? PUBLIC_PATH + '/' + CHAT_VARIABLE
+//   : PUBLIC_PATH + '/';
+const publicPath = '/travelAgent/';
+
 // const outDir = (isProdEnv && CHAT_VARIABLE) ? 'build/' + CHAT_VARIABLE : 'build' ;
 const outDir = 'docs';
 

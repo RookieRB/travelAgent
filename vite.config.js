@@ -55,8 +55,8 @@ export default defineConfig(async () => {
       },
        proxy: {
       // 捕获以 /api 开头的请求
-      '/api': {
-        target: 'http://localhost:8000', // 这里必须是你 Python 后端运行的地址和端口
+      '/travelapi': {
+        target: 'http://124.71.176.26:8000/', // 这里必须是你 Python 后端运行的地址和端口
         changeOrigin: true,
         // 如果你的后端代码里路由本身就包含 /api (如 @app.post("/api/chat/stream"))
         // 就不需要 rewrite。如果后端是 @app.post("/chat/stream")，则需要去掉 /api
